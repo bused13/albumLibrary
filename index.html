@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+<meta http-equiv="Content-style-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-script-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/my_css.css" />
+
+  <meta charset="utf-8">
+  <title>Best-selling albums</title>
+  <script src="albumsData.json"></script>
+  <script src="albums.js"></script>
+ 
+</head>
+
+<body>
+    <img src="images/albumcover.jpg" type="jpg" class="cover"> 
+  <h2>Top Selling Albums in The United States for The Last 60 Years.</h2> <br/>
+
+	<div class="sortbox">
+	  <label for="selectYear">Years: </label> 
+	  <select id="selectYear">
+		<!-- Insert years as options here -->
+	  </select>
+	  <label for="selectName">Artists: </label> 
+		  <select id="selectName">
+		  </select>
+	  <label for="selectCountry">Nationalities: </label>
+	  <select id="selectCountry">
+	  </select>
+	  <label for="selectAlbumName">Albums: </label>
+	  <select id="selectAlbumName">
+	  </select>
+	  <label for="selectGenreName">Genres: </label>
+	  <select id="selectGenreName">
+	  </select>
+	</div>
+
+  <!-- Insert contries as options here -->
+  <table id="hitsTable">
+      <tr class="header">
+      <th>Year</th>
+      <th>Artist</th>
+      <th>Nationality</th>
+      <th>Album</th>
+      <th>Genre</th>
+      <th>Album Cover</th>
+    </tr>
+  </table>
+</body>
